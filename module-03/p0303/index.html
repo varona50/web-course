@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #sub {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        #onw {
+            height: 50px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset id="onw">
+        <legend>General Info</legend>
+        <label for="username">Yuor Name</label>
+        <form action="http://httpbin.org/post" method="post">
+            <input id="username" name="username" type="text" placeholder="Ex: Alex Petroff" required>
+            <label for="useraddress">Your Address</label>
+            <input id="useraddress" name="useraddress" type="text" placeholder="Ex: Moskov, 82" required>
+        </form>
+    </fieldset>
+    <fieldset id="onw">
+        <legend>Pizza Info</legend>
+        <select id="pizzaname" name="pizzaname">
+      <option value="pepperoni" selected >Pepperoni</option>
+      <option value="cheese">Only with Cheese</option>
+      <option value="mexicana">Mexicana</option>
+    </select>
+        <input id="extracheese" type="chrckbox" name="extracheese" value="cheese">Cheese
+        <input id="extratomato" type="checkbox" name="extratomato" value="tomato">Tomato
+    </fieldset>
+    <fieldset id="onw">
+        <input type="radio" name="pizzasize" value="s">Small
+        <input type="radio" name="pizzasize" value="m">Medium
+        <input type="radio" name="pizzasize" value="l">Large
+    </fieldset>
+    <div id="sub">
+        <input type="submit" value="Get My Pizza!">
+    </div>
+</body>
+
+</html>
