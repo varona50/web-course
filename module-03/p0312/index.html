@@ -2,13 +2,22 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
+    <title>Video</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <h1>Test</h1>
+    <h1>Elephants dream</h1>
+    <video poster="./video/elephants-dream.title.jpg" controls>
+    <source src="./video/elephants-dream-medium.mp4" type="video/mp4">
+    <source src="./video/elephants-dream-medium.webm" type="video/webm">
+    <track label="English subtitles" kind="subtitles" srclang="en" src="./video/elephants-dream-subtitles-en.vtt" default>
+    <track label="German subtitles" kind="subtitles" srclang="de" src="./video/elephants-dream-subtitles-de.vtt">
+    <track label="Ukrainian subtitles" kind="subtitles" srclang="uk" src="./video/elephants-dream-subtitles-uk.vtt">
+    <track label="English chapters" kind="chapters" srclang="en" src="c">
+    <track label="German chapters" kind="chapters" srclang="de" src="elephants-dream-chapters-de.vtt"> 
+    </video>
 </body>
 
 </html>
